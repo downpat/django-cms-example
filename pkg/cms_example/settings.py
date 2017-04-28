@@ -57,6 +57,8 @@ INSTALLED_APPS = [
     'djangocms_snippet',
     'djangocms_style',
     'djangocms_column',
+
+    'example_plugins',
 ]
 
 MIDDLEWARE_CLASSES = [
