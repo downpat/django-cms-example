@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+  db:
+    image: postgres
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: bash -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8080"
+    #command: bash -c "django-admin startproject cms_example"
+    volumes: [
+      "./pkg:/app"
+    ]
+    ports: ["8080:8080"]
+    depends_on:
+      - db

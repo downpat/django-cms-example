@@ -1,0 +1,14 @@
+Django==1.9.13
+requests==2.13.0
+psycopg2==2.6.2
+django-cms==3.4
+django-filer
+djangocms_text_ckeditor
+djangocms-link
+djangocms-file
+djangocms-picture
+djangocms-video
+djangocms-googlemap
+djangocms-snippet
+djangocms-style
+djangocms-column
