@@ -175,3 +175,9 @@ THUMBNAIL_PROCESSORS = (
     'filer.thumbnail_processors.scale_and_crop_with_subject_location',
     'easy_thumbnails.processors.filters'
 )
+
+#Tableau Settings
+TABLEAU_USERNAME = 'pat@downpatproductions.com'
+TABLEAU_PASSWORD = 'q9zOoyulCISLYAXSxtIwH2n'
+TABLEAU_SITE = 'downpatproductions'
+TABLEAU_SERVER = 'https://us-east-1.online.tableau.com'

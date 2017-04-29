@@ -1,4 +1,5 @@
 from django.db import models
+from django.conf import settings
 
 from cms.models.pluginmodel import CMSPlugin
 
@@ -6,7 +7,7 @@ class TableauView(CMSPlugin):
 
     site_root = models.CharField('Site Root',
         blank=False,
-        default='',
+        default=settings.TABLEAU_SITE,
         help_text='The site root of the Tableau site hosting the View',
         max_length=50
     )
